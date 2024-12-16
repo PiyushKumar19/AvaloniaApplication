@@ -25,10 +25,12 @@
                 Content="X"
                 FontSize="10"/>
             </Border>
-        <TextBlock Text="Hello Avalonia"
+        <TextBlock Text="{Binding TextBlockName}"
+                   Name="TextBlockName"
                    HorizontalAlignment="Center"
                    VerticalAlignment="Center"></TextBlock>
         <Button Content="Click"
-                HorizontalAlignment="Center" ></Button>
+                HorizontalAlignment="Center"
+                Command="{Binding ButtonOnClickCommand}"></Button>
     </StackPanel>
 </Window>

@@ -14,4 +14,9 @@ public partial class MainWindow : Window
     {
         Close();
     }
+    
+    public void ButtonOnClick(object? sender, RoutedEventArgs e)
+    {
+        TextBlockName.Text = "CLICKED!";
+    }
 }
